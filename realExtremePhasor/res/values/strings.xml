@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Extreme Phasor</string>
+    <string name="action_settings">Settings</string>
+    <string name="Phasor_text_view">Phasor</string>
+    <string name="Rectangular_form_text_view">Rectangular Form</string>
+    <string name="plus_text_view">+</string>
+    <string name="imaginary_text_view">j</string>
+    <string name="Phasor_form_text_view">Phasor Form</string>
+    <string name="Clear_text_view">Clear</string>
+    <string name="Enter_text_view">Enter</string>
+    <string name="o_text_view">o</string>
+
+</resources>

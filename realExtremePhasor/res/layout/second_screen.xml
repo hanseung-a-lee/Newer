@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SecondActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/phasorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Phasor_text_view"
+        android:textSize="@dimen/Phasor_form_text_size" />
+
+    <TextView
+        android:id="@+id/rectangularFormTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/Rectangular_form_text_view"
+        android:textSize="@dimen/Rectangular_form_text_size" />
+
+    <EditText
+        android:id="@+id/rectAEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/rectangularFormTextView"
+        android:layout_marginTop="14dp"
+        android:ems="5"
+        android:inputType="numberSigned|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/plusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rectAEditText"
+        android:layout_alignLeft="@+id/phasorTextView"
+        android:text="@string/plus_text_view"
+        android:textSize="@dimen/plus_form_text_size" />
+
+    <TextView
+        android:id="@+id/imaginaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plusTextView"
+        android:layout_alignBottom="@+id/plusTextView"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/plusTextView"
+        android:text="@string/imaginary_text_view"
+        android:textSize="@dimen/imaginary_form_text_size" />
+
+    <EditText
+        android:id="@+id/rectBEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imaginaryTextView"
+        android:layout_toRightOf="@+id/phasorTextView"
+        android:ems="5"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/phasorFormTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Phasor_form_text_view"
+        android:textSize="@dimen/Rectangular_form_text_size" />
+
+    <EditText
+        android:id="@+id/magnitudeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rectAEditText"
+        android:layout_below="@+id/phasorFormTextView"
+        android:layout_marginTop="23dp"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/angleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/magnitudeEditText"
+        android:layout_alignBottom="@+id/magnitudeEditText"
+        android:layout_alignParentRight="true"
+        android:ems="5"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clearButton"
+        android:layout_alignBottom="@+id/clearButton"
+        android:layout_alignRight="@+id/phasorFormTextView"
+        android:text="@string/Enter_text_view" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:layout_toLeftOf="@+id/imaginaryTextView"
+        android:text="@string/Clear_text_view" />
+
+    <TextView
+        android:id="@+id/oTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/angleEditText"
+        android:layout_alignTop="@+id/angleEditText"
+        android:text="@string/o_text_view" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterButton"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/angleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oTextView"
+        android:layout_toRightOf="@+id/back"
+        android:src="@drawable/angle" />
+
+</RelativeLayout>
